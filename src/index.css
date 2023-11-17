@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FavoritC";
+  src: url(./assets/fonts/favorit/FavoritC.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "trailer";
+  src: url(./assets/fonts/ttTrailers/TTTrailers-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cyberthrone";
+  src: url(./assets/fonts/cyberthrone/Cyberthrone.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    cursor: none;
+    font-family: "Roboto", sans-serif;
+    background-color: #fcf9ee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.Cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  transform-origin: center center;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  filter: url("#goo");
+}
+
+.Cursor span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: white;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+
+#hover_test {
+  transform: translate3d(0px, -4.8vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+#hover_test_c {
+  transform: translate3d(0px, -9.8vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.6s;
+}
+#hover_test_c_active {
+  transform: translate3d(0px, 0.3vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.6s;
+}
+#hover_test_active {
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+#hover__ani,
+#hover_m_ani {
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+#hover__ani:hover {
+  transform: translate3d(0px, -75%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+#hover_m_ani:hover {
+  transform: translate3d(-58px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+#button__hover,
+#button__hover_arrow {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
+#button__hover_arrowf {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-90deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
+#button__hover:hover {
+  transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
+#button__hover_arrow_active {
+  transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
+#button__hover_arrowf_active {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(270deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
